@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+     // ...
+   ],
   content: [
     "./src/**/*.{njk,md,html}",
     "./src/*.{njk,md,html}", 
