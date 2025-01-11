@@ -7,7 +7,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets/images");
     eleventyConfig.addPassthroughCopy("src/admin/index.html");
     eleventyConfig.addPassthroughCopy("src/admin/config.yml");
-
+    let markdownIt = require("markdown-it");
+    let markdownItFootnote = require("markdown-it-footnote");
 
     eleventyConfig.addShortcode(
         "headers",

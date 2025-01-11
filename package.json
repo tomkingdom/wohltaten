@@ -2,7 +2,6 @@
   "name": "learneleventy",
   "version": "1.0.0",
   "main": "index.js",
-  
   "scripts": {
     "start": "npm-run-all -p dev:*",
     "build": "run-s build:*",
@@ -23,6 +22,7 @@
     "tailwindcss": "^3.4.17"
   },
   "dependencies": {
-    "@sideway/formula": "^3.0.1"
+    "@sideway/formula": "^3.0.1",
+    "markdown-it-footnote": "^4.0.0"
   }
 }
