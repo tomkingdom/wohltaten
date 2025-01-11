@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@sideway/formula": "^3.0.1",
+    "markdown-it": "^14.1.0",
     "markdown-it-footnote": "^4.0.0"
   }
 }
