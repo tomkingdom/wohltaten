@@ -2,9 +2,10 @@
   "name": "learneleventy",
   "version": "1.0.0",
   "main": "index.js",
+  
   "scripts": {
-    "start": "npx eleventy --serve",
-    "build": "eleventy",
+    "start": "npm-run-all -p dev:*",
+    "build": "run-s build:*",
     "dev:11ty": "eleventy --serve",
     "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/tailwind.css --watch --postcss",
     "build:11ty": "eleventy",

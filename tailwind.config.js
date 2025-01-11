@@ -5,6 +5,9 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-  content: ["./src/**/*.{njk,md}", "./src/**/*.svg",]
+  content: [
+    "./src/**/*.{njk,md,html}",
+    "./src/*.{njk,md,html}", 
+    "./src/**/*.svg",]
 }
 
