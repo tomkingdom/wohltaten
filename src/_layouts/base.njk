@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet"> 
 
+    <!-- CMS -->  
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}">
 
@@ -24,6 +27,17 @@
 
   <body class="max-w-3xl mx-auto py-12 min-h-screen">
     {{ content | safe }}
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
   </body>
   
   {% include "partials/_footer.njk" %}

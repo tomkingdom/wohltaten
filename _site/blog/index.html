@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet"> 
 
+    <!-- CMS -->  
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="/assets/css/tailwind.css">
 
     <!-- Meta -->
-    <title>James Midzi - Blog  </title>
+    <title>Wohltaten - Blog  </title>
     <meta name="description" content="
       
-        A site to showcase Eleventy features by building a site.
+        No despcropti0no yet
       
     "/>
   </head>
@@ -60,6 +63,36 @@
         </li>
     
 </ul>
+
+<ul class='blog-list'>
+    
+        <li class="blog-list-item">
+            <a class="blog-list-link" href="/blog/post2/">Second Post</a>
+            <small class="blog-list-date">21. Mai 2022</small>
+        </li>
+    
+        <li class="blog-list-item">
+            <a class="blog-list-link" href="/blog/post1/">First Post</a>
+            <small class="blog-list-date">27. Mai 2022</small>
+        </li>
+    
+        <li class="blog-list-item">
+            <a class="blog-list-link" href="/blog/post3/">Third Post</a>
+            <small class="blog-list-date">8. Jan. 2025</small>
+        </li>
+    
+<ul>
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
   </body>
   
   <p>Footer<p/>

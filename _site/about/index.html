@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet"> 
 
+    <!-- CMS -->  
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="/assets/css/tailwind.css">
 
     <!-- Meta -->
-    <title>James Midzi - About  </title>
+    <title>Wohltaten - About  </title>
     <meta name="description" content="
       
-        A site to showcase Eleventy features by building a site.
+        No despcropti0no yet
       
     "/>
   </head>
@@ -44,6 +47,17 @@
   <body class="max-w-3xl mx-auto py-12 min-h-screen">
     <h1>About Page</h1>
 
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
   </body>
   
   <p>Footer<p/>

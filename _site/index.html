@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet"> 
 
+    <!-- CMS -->  
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="/assets/css/tailwind.css">
 
     <!-- Meta -->
-    <title>James Midzi - Home  </title>
+    <title>Wohltaten - Home  </title>
     <meta name="description" content="
       
-        A site to showcase Eleventy features by building a site.
+        No despcropti0no yet
       
     "/>
   </head>
@@ -57,6 +60,17 @@ I am a site built with <a href="https://www.11ty.io/">Eleventy</a>
 This site is my effort to understand Eleventy. I am doing so by guiding others.
 
 Together, we will Learn Eleventy.
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
   </body>
   
   <p>Footer<p/>
