@@ -10,6 +10,8 @@ tags:
   - center
   - right
 ---
+[https://www.youtube.com/watch?v=_kEQs5Mtb-I](https://www.youtube.com/watch?v=_kEQs5Mtb-I)
+
 im ersten samuel kapitel 1 stehen nicht die korridore der macht im mittelpunkt, sondern die
 
 ersten Züge von Gottes großen nationalen und kosmischen Absichten in der Geschichte in der unbezeugten Intimität der häuslichen und
@@ -75,7 +77,3 @@ eine frage, die man sich stellen sollte, ist, ob 1. samuel kapitel 1 uns einen e
 die Art und Weise, wie die Dinge tatsächlich umgedreht werden, auf welche Weise könnte es die Art und Weise, wie wir versuchen, in unserer Gesellschaft etwas zu bewirken, informieren und verändern
 
 in unserer Gesellschaft in 1. samuel kapitel 2 antwortet hannah
-
-
-
-Übersetzt mit DeepL.com (kostenlose Version)
