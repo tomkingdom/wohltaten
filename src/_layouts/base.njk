@@ -9,7 +9,7 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/output.css' | url }}">
 
     <!-- Meta -->
     <title>{{site.title}}{% if title %} - {{title}} {% endif %} </title>
@@ -22,15 +22,15 @@
     "/>
   </head>
 
-  {% include "partials/_navigation.njk" %}
 
-  <body class="max-w-3xl mx-auto py-12 min-h-screen">
-    {{ content | safe }}
-    
-
-
-  </body>
   
+  <body class="inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6">
+
+    {% include "partials/_navigation.njk" %}
+
+
+    {{ content | safe }}
+
   {% include "partials/_footer.njk" %}
 
 </html>

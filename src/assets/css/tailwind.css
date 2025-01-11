@@ -8,4 +8,18 @@
         font-size: 1.5rem;
         line-height: 2rem;
     }
-  }
+    @font-face {
+        font-family: 'Bembo';
+        src: url('../fonts/etbookot-roman-webfont.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'BemboBold';
+        src: url('../fonts/etbookot-bold-webfont.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
+    }
+
+ 

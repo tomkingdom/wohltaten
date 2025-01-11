@@ -1,16 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    "./src/**/*.{html,md,njk,ejs,pug}",
+    "./src/*.{html,md,njk,ejs,pug}",
+    "./src/*.{html,md,njk,ejs,pug}"
+  ],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ['Bembo', 'sans-serif'],
+      serif: ['Bembo', 'serif'],
+    },
+    extend: {
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
      // ...
    ],
-  content: [
-    "./src/**/*.{njk,md,html}",
-    "./src/*.{njk,md,html}", 
-    "./src/**/*.svg",]
+  
 }
 

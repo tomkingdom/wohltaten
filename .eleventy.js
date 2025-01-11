@@ -1,8 +1,14 @@
-
 const { DateTime } = require("luxon");
+
 
 // add to .eleventy.js
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addWatchTarget("./src/");
+  eleventyConfig.addWatchTarget("./src/*.{njk,json,html,md}");
+  eleventyConfig.addWatchTarget("./src/**/*.{njk,json,html,md}");
+  eleventyConfig.addWatchTarget("./src/**/**/*.{njk,json,html,md}");
+
+
 
   /* Markdown Overrides */
   // set markdown footnote processor
@@ -32,9 +38,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLib);
 
   //rest of your config here...
-    eleventyConfig.addPassthroughCopy("src/assets/css/style.css");
-    eleventyConfig.addPassthroughCopy("src/assets/css/tailwind.css");
+    eleventyConfig.addPassthroughCopy("src/assets/css/output.css");
     eleventyConfig.addPassthroughCopy("src/assets/images");
+    eleventyConfig.addPassthroughCopy("src/assets/fonts");
     eleventyConfig.addPassthroughCopy("src/admin/index.html");
     eleventyConfig.addPassthroughCopy("src/admin/config.yml");
 

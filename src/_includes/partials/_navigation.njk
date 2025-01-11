@@ -1,11 +1,11 @@
-<header class="bg-black text-gray-50 py-4">
-    <nav class="max-w-2xl mx-auto text-lg space-x-6">
+<header class="bg-gray-400 sticky top-0">
+    <nav class="">
         {% for item in collections.page %}
         <a href="{{ item.url }}"
         {% if item.url == page.url %}
             aria-current='page' data-state='active'
         {% endif %}
-        class="hover:text-sky-400"
+        class="hover:text-sky-400 text-xl"
         >{{ item.data.title }}</a>
         {% endfor %}
     </nav>
