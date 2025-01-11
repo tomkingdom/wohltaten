@@ -1,5 +1,5 @@
 ---
-title: Alisatir Roberts on 1. Samuel 1
+title: Alistair Roberts zum 1. Samuel 1
 description: Capitalize on low hanging fruit to identify a ballpark value added
   activity to beta test. Override the digital divide with additional
   clickthroughs from DevOps.
