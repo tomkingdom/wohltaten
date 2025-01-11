@@ -20,5 +20,8 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "@sideway/formula": "^3.0.1"
   }
 }
