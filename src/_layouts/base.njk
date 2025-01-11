@@ -27,17 +27,20 @@
 
   <body class="max-w-3xl mx-auto py-12 min-h-screen">
     {{ content | safe }}
+    
+    <!-- Include the script that builds the page and powers Decap CMS -->
     <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
         });
       }
-    });
-  }
-</script>
+    </script>
+
   </body>
   
   {% include "partials/_footer.njk" %}

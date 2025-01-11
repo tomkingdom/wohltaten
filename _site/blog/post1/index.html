@@ -56,17 +56,20 @@
  <br>
  <hr>
  <a href="/blog">Blog Home</a>
+    
+    <!-- Include the script that builds the page and powers Decap CMS -->
     <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
         });
       }
-    });
-  }
-</script>
+    </script>
+
   </body>
   
   <p>Footer<p/>
