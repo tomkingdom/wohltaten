@@ -4,9 +4,13 @@
 
 @layer base {
     #post {
+        font-size: 1.25rem;
     }
     .footnote-ref {
         @apply text-2xl;
+    }
+    blockquote p {
+        @apply not-italic;
     }
     blockquote p strong {
         margin: 0 -0.4em;

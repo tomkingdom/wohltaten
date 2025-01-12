@@ -555,6 +555,11 @@ video {
 }
 
 #post {
+  font-size: 1.25rem;
+}
+
+blockquote p {
+  font-style: normal;
 }
 
 blockquote p strong {
