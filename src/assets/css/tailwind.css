@@ -7,9 +7,23 @@
         font-size: 1.5rem;
         line-height: 2rem;
     }
-    .  footnote-ref {
+    .footnote-ref {
         @apply text-2xl;
     }
+    .bold {
+        margin: 0 -0.4em;
+        padding: 0.1em 0.4em;
+        border-radius: 0.8em 0.3em;
+        background: transparent;
+        background-image: linear-gradient(
+          to right,
+          rgba(255, 225, 0, 0.1),
+          rgba(255, 225, 0, 0.7) 4%,
+          rgba(255, 225, 0, 0.3)
+        );
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+      }
     @font-face {
         font-family: 'Bembo';
         src: url('../fonts/etbookot-roman-webfont.woff2') format('woff2');
