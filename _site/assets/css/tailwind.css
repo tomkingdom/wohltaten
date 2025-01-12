@@ -555,8 +555,21 @@ video {
 }
 
 #post {
-  font-size: 1.5rem;
-  line-height: 2rem;
+}
+
+blockquote p strong {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+          to right,
+          rgba(255, 225, 0, 0.1),
+          rgba(255, 225, 0, 0.7) 4%,
+          rgba(255, 225, 0, 0.3)
+        );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 @font-face {
@@ -1109,10 +1122,6 @@ video {
   margin-top: 0px;
 }
 
-.inline {
-  display: inline;
-}
-
 .w-full {
   width: 100%;
 }
@@ -1142,6 +1151,10 @@ video {
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .pr-4 {
