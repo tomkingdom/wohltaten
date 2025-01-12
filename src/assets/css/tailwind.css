@@ -4,9 +4,11 @@
 
 @layer base {
     #post {
-        margin-top: 2rem;
         font-size: 1.5rem;
         line-height: 2rem;
+    }
+    .  footnote-ref {
+        @apply text-2xl;
     }
     @font-face {
         font-family: 'Bembo';

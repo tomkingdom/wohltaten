@@ -2,18 +2,14 @@
 layout: base
 title: Posts
 tags: page
-order: 3
+order: 2
 ---
-
-
-
-
 
 <ul class='blog-list'>
     {% for post in collections.post %}
-        <li class="blog-list-item">
-            <a class="blog-list-link" href="{{ post.url }}">{{ post.data.title }}</a>
-            <small class="blog-list-date">{{post.date | postDate}}</small>
+        <li class="blog-list-item pb-4">
+            <a class="blog-list-link" href="{{ post.url }}"><span class="text-gray-400 pr-4 min-w-44 blog-list-date">{{post.date | postDate}}</span><span>{{ post.data.title }}</span></a>
+            
         </li>
     {% endfor %}
 <ul>

@@ -24,13 +24,17 @@
 
 
   
-  <body class="inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6">
+  <body class="inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white">
 
     {% include "partials/_navigation.njk" %}
 
-
+    <main class="pt-6 text-xl	px-6">
     {{ content | safe }}
+    {% include "partials/_footer.njk" %}
+    </main>
 
-  {% include "partials/_footer.njk" %}
+    
+
+  </body>
 
 </html>
